@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7e9dc;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+.main {
+  max-width: 1440px;
+}
+.top-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  background-color: #ec755d;
+}
+.title-price {
+  display: flex;
+  flex-direction: column;
+}
+.title-price span:first-child {
+  color: rgb(245, 244, 244);
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.title-price span:last-child,
+.bottom-title-price span:last-child {
+  font-size: 25px;
+  font-weight: 700;
+}
+.increase span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+}
+.bottom-title-price span:first-child,
+.increase span:last-child,
+.chart span {
+  font-size: 14px;
+
+  color: rgb(138, 137, 137);
+  opacity: 0.8;
+}
+.bottom-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bottom-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.bottom-title-price,
+.increase {
+  display: flex;
+  flex-direction: column;
+}
+.increase {
+  align-items: flex-end;
+}
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday,
+.saturday,
+.sunday {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chart-line {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ec755d;
+  cursor: pointer;
+}
+
+.tooltip {
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 3px;
+  background-color: black;
+  visibility: hidden;
+}
+.chart-line-monday:hover {
+  font-size: 10px;
+}
+
+.chart-line:hover {
+  background-color: #76b5bc;
+}
+.monday:hover .tooltip,
+.tuesday:hover .tooltip,
+.wednesday:hover .tooltip,
+.thursday:hover .tooltip,
+.friday:hover .tooltip,
+.saturday:hover .tooltip,
+.sunday:hover .tooltip {
+  visibility: visible;
+}
+.monday .chart-line {
+  height: 17.45px;
+}
+
+.tuesday .chart-line {
+  height: 34.91px;
+}
+.wednesday .chart-line {
+  height: 52.36px;
+}
+.thursday .chart-line {
+  height: 31.07px;
+}
+.friday .chart-line {
+  height: 23.39px;
+}
+.saturday .chart-line {
+  height: 43.28px;
+}
+.sunday .chart-line {
+  height: 25.48px;
+}
